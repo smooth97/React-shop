@@ -5,13 +5,12 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
-import data from 'MOCK_DATA.json';
+//import data from 'MOCK_DATA.json';
 
-function App() {
+function App() {    
 
-  const [datas, setDatas] = useState(data);
+//  const [datas, setDatas] = useState(data);
 
-  console.log(datas)
 
   return (
     <Router>
