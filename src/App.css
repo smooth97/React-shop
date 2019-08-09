@@ -1,13 +1,10 @@
-.App {
-  text-align: center;
-}
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(71, 71, 71);
+  
   color: white;
 }
 
@@ -20,5 +17,16 @@ nav {
 }
 
 .a {
-  color: white;
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.a:hover {
+  color: rgb(243, 124, 73)
+}
+
+.logo img {
+  width: 40px;
 }

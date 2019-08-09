@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=shop.css.map */
+.shopContainer {
+  width: 100vw;
+  background: #eae8e9;
+}
+
+header {
+  width: 100vw;
+  height: 300px;
+  background: tomato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .left {
+  width: 300px;
+  height: 100%;
+  background: #212b37;
+}
+
+header .right {
+  width: 300px;
+  height: 100%;
+  background: #f7f1e5;
+}
+
+header .text {
+  width: 60%;
+  height: 100%;
+  background: #212b37;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .text img {
+  margin-top: 100px;
+  width: 200px;
+}
+
+header .text h1 {
+  margin-bottom: 100px;
+}
+
+header img {
+  width: 450px;
+}
+
+header:last-child {
+  -ms-flex-line-pack: right;
+      align-content: right;
+}
+
+main {
+  width: 100vw;
+}
+
+main section {
+  width: 1200px;
+  height: 650px;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+main section div {
+  width: 350px;
+  height: 565px;
+  background: white;
+}
+
+footer {
+  width: 100vw;
+  height: 150px;
+  background: #454545;
+}
+/*# sourceMappingURL=shop.css.map */

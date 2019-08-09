@@ -1,0 +1,44 @@
+$grey : #454545;
+$orange : rgb(243, 124, 73);
+$brown: rgb(181,133,90);
+$dark-blue: rgb(33,43,55);   
+$light-yellow: rgb(247,241,229);   
+
+.aboutContainer {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+
+    .textBox {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    
+        h1 {
+            font-size: 30pt;
+        }
+    
+        p {
+            width: 400px;
+            min-width: 60%;
+            font-weight: 100;
+            margin-top: 50px;
+        }
+    
+        span {
+            display: block;
+            margin: 50px 0 250px;
+            color: $orange;
+       }
+    }
+    
+    .imgBox {
+        width: 40%;
+        margin: auto;
+        display: flex;
+    }
+}
+

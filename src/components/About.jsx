@@ -1,40 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/about.css';
-
-const Pokemon = ({name,image}) => {
-    return (
-        <div>
-            <h3>name = {name}</h3>
-            <img src={image} alt=""/>
-        </div>
-    )
-};
+import main from '../images/main.png';
 
 const About = () => {
 
-    const [pokemon, setPokemon] = useState([]);
-
-    //`http://pokeapi.co.api/v2/pokemon/25/`;
-
-    useEffect(() => {
-        getApi();
-    }, [])
-
-
-    const getApi = async () => {
-        const response = await fetch(`http://pokeapi.co/api/v2/pokemon/25/`);
-        const data = await response.json();
-        console.log(data);
-        setPokemon([data]);
-    };
-
-    //sprites.front_default
-
     return (
-        <div>
-            {<div>{pokemon.map(poke => (
-                <Pokemon name={poke.species.name} image={poke.sprites.front_default}/>
-            ))}</div>}
+        <div className="aboutContainer">
+            <section className="textBox">
+                <div>
+                <h1>A shared vision, <br/>seen in a whole new light.</h1>
+                <p>A partnership based on parallel thinking, singular vision, and mutual regard continues with a fresh expression. The latest Apple Watch Hermès collection showcases boldly colorful leather bands and a delightful watch face designed with Apple. It’s the ultimate tool for modern life — now with a dash of sophisticated whimsy.</p>
+                <Link className="a" to="/shop"><span>Learn more about Apple Watch Series 4 ></span></Link>
+                </div>
+            </section>
+            <section className="imgBox"><img src={main} /></section>
         </div>
     );
 }

@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.aboutContainer {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutContainer .textBox {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.aboutContainer .textBox h1 {
+  font-size: 30pt;
+}
+
+.aboutContainer .textBox p {
+  width: 400px;
+  min-width: 60%;
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+.aboutContainer .textBox span {
+  display: block;
+  margin: 50px 0 250px;
+  color: #f37c49;
+}
+
+.aboutContainer .imgBox {
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=about.css.map */
