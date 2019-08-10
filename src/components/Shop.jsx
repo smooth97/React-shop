@@ -4,7 +4,7 @@ import Data from '../Data';
 import Shophead from './Shophead';
 import Watch from './Watch';
 import Footer from './Footer';
-
+import { Link } from 'react-router-dom';
 
 const Section = () => {
 
@@ -16,6 +16,7 @@ const Section = () => {
         <main>
         <section>
         {watches.map(watch => (
+                    <Link to={watch.src} style={{textDecoration: 'none'}}>
                     <Watch
                         image={watch.image}
                         series={watch.series}
@@ -24,7 +25,7 @@ const Section = () => {
                         price={watch.price}
                         size={watch.size}
                         key={watch.id}
-                    />
+                    /></Link>
                 ))}
         </section>
         </main>

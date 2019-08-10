@@ -18,6 +18,7 @@ const Data = [
         price: "$1,399.00",
         size: "40mm",
         image: image1,
+        src: "/Shop01",
     },
     {
         id: 2,
@@ -27,6 +28,7 @@ const Data = [
         price: "$1,299.00",
         size: "44mm",
         image: image2,
+        src: "/Shop02",
     },
     {
         id: 3,
@@ -36,6 +38,7 @@ const Data = [
         price: "$1,399.00",
         size: "40mm",
         image: image3,
+        src: "/Shop03",
     },
     {
         id: 4,
@@ -45,6 +48,7 @@ const Data = [
         price: "$1,399.00",
         size: "40mm",
         image: image4,
+        src: "/Shop04",
     },
     {
         id: 5,
@@ -54,6 +58,7 @@ const Data = [
         price: "$1,299.00",
         size: "44mm",
         image: image5,
+        src: "/Shop05",
     },
     {
         id: 6,
@@ -63,6 +68,7 @@ const Data = [
         price: "$1,249.00",
         size: "40mm",
         image: image6,
+        src: "/Shop06",
     },
     {
         id: 7,
@@ -72,6 +78,7 @@ const Data = [
         price: "$1,399.00",
         size: "44mm",
         image: image7,
+        src: "/Shop07",
     },
     {
         id: 8,
@@ -81,6 +88,7 @@ const Data = [
         price: "$1,499.00",
         size: "44mm",
         image: image8,
+        src: "/Shop08",
     },
     {
         id: 9,
@@ -90,6 +98,7 @@ const Data = [
         price: "$1,499.00",
         size: "44mm",
         image: image9,
+        src: "/Shop09",
     },
 ];
 

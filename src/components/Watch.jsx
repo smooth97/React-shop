@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Watch = ({image, series, connectivity, features, price, size, id}) => {
+const Watch = ({image, series, connectivity, features, price, size, src}) => {
     
     return(
         <div>

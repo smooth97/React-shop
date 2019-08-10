@@ -1,7 +1,48 @@
+$grey : #454545;
+$light-grey: rgb(234,232,233);   
+$orange : rgb(243, 124, 73);
+$brown: rgb(181,133,90);
+$dark-blue: rgb(33,43,55);   
+$light-yellow: rgb(247,241,229);
+
 .cartContainer{
     text-align: center;
+    position: relative;
 
     h1 {
+        margin: 7%;
+        color: grey;
+    }
+
+    img {
+        position: relative;
+    }
+
+    div {
+        position: absolute;
+        top: 45%;
+        left: 13%;
+
+        h2 {
+            font-size: 40pt;
+            color: rgb(182, 182, 182);
+            margin-block-start: 0.83em;
+            margin-block-end: 0.3em;
+        }
+        p {
+            color: rgb(167, 167, 167);
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-weight: 200;
+        }
         
+        button {
+            background: $orange;
+            border: none;
+            color: white;
+            margin: 40px;
+            padding: 4px;
+            cursor: pointer;
+        }
     }
 }

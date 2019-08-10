@@ -1,4 +1,47 @@
 .cartContainer {
   text-align: center;
+  position: relative;
+}
+
+.cartContainer h1 {
+  margin: 7%;
+  color: grey;
+}
+
+.cartContainer img {
+  position: relative;
+}
+
+.cartContainer div {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+}
+
+.cartContainer div h2 {
+  font-size: 40pt;
+  color: #b6b6b6;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.3em;
+          margin-block-end: 0.3em;
+}
+
+.cartContainer div p {
+  color: #a7a7a7;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-weight: 200;
+}
+
+.cartContainer div button {
+  background: #f37c49;
+  border: none;
+  color: white;
+  margin: 40px;
+  padding: 4px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=cart.css.map */
