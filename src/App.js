@@ -11,7 +11,6 @@ function App() {
 
 //  const [datas, setDatas] = useState(data);
 
-
   return (
     <Router>
       <div className="App">

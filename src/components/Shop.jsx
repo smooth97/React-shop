@@ -1,63 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/shop.css';
-import headerImg from '../images/shop/header.jpg';
-import logo from '../images/shop/logo.JPG';
+import Data from '../Data';
+import Shophead from './Shophead';
+import Watch from './Watch';
+import Footer from './Footer';
 
-const Header = () => {
 
-    return (
-        <>
-             <header>
-                <div className="left"></div>
-                    <div className="text">
-                        <img className="logo" src={logo} alt="logo"/>
-                        <h1> 
-                            A shared vision, seen<br/>in a whole new light.
-                        </h1>
-                    </div>
-                    <img src={headerImg} alt="header" />
-                <div className="right"></div>
-            </header>
-        </>
-    )
-}
+const Section = () => {
 
-const Section = ({image, id}) => {
+    // useState 사용해서 시계 Data 가져와서 Watch 컴포넌트에 적용
     
+    const [watches, setWatches] = useState(Data);
+
     return (
         <main>
         <section>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
-        </section>
-        <section>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
-        </section>
-        <section>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
-            <div><img src={image} alt={id}/></div>
+        {watches.map(watch => (
+                    <Watch
+                        image={watch.image}
+                        series={watch.series}
+                        connectivity={watch.connectivity}
+                        features={watch.features}
+                        price={watch.price}
+                        size={watch.size}
+                        key={watch.id}
+                    />
+                ))}
         </section>
         </main>
     );
-}
-
-const Footer = () => {
-
-    return (
-        <footer>            
-        </footer>
-    )
 }
 
 const Shop = () => {
 
     return (
         <div className="shopContainer">
-            <Header/>
+            <Shophead/>
             <Section/>
             <Footer/>
         </div> 
