@@ -8,7 +8,6 @@ import image6 from './images/shop/44-hermes-fauve-singletour-s4-grid.jpg';
 import image7 from './images/shop/44-hermes-fauve-singletour-rallye-s4-grid.jpg';
 import image8 from './images/shop/44-hermes-fauve-singletour-deployment-s4-grid.jpg';
 import image9 from './images/shop/44-hermes-ebene-singletour-deployment-s4-grid.jpg';
-
 const Data = [
     {
         id: 1,

@@ -3,19 +3,11 @@ import Data from '../../Data';
 import '../../styles/shops.css';
 
 
-const Shop01 = () => {
+const Shop09 = () => {
 
     const title = 'Apple Watch Hermès';
-    const [watch, setWatch] = useState(Data[0]);
 
-        // id: 1,
-        // series: "4",
-        // connectivity: "GPS + CELLULAR",
-        // features: "Stainless Steel Case with Indigo/Craie/Orange Swift Leather Double Tour",
-        // price: "$1,399.00",
-        // size: "40mm",
-        // image: image1,
-        // src: "/Shop01",
+    const [watch, setWatch] = useState(Data[8]);
     
     return (
         <div className="watchContainer">
@@ -27,7 +19,7 @@ const Shop01 = () => {
                     <img src={watch.image} alt=""/>
                 </div>
                 <div className="order">
-                <div className="spec">
+                    <div className="spec">
                         <div className="title">
                             <h1>{title}</h1>
                             <h2>{watch.features}</h2>
@@ -35,7 +27,7 @@ const Shop01 = () => {
                         <div className="case">
                             <h2>Case Size</h2>
                             <h3>{watch.size}</h3>
-                            <p>Band fits 130–155mm wrists.</p>
+                            <p>Band fits 165–200mm wrists.</p>
                         </div>
                     </div>
                     <div className="connectivity">
@@ -50,4 +42,4 @@ const Shop01 = () => {
     )
 };
 
-export default Shop01;
+export default Shop09;

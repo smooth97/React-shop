@@ -3,19 +3,11 @@ import Data from '../../Data';
 import '../../styles/shops.css';
 
 
-const Shop01 = () => {
+const Shop04 = () => {
 
     const title = 'Apple Watch Hermès';
-    const [watch, setWatch] = useState(Data[0]);
 
-        // id: 1,
-        // series: "4",
-        // connectivity: "GPS + CELLULAR",
-        // features: "Stainless Steel Case with Indigo/Craie/Orange Swift Leather Double Tour",
-        // price: "$1,399.00",
-        // size: "40mm",
-        // image: image1,
-        // src: "/Shop01",
+    const [watch, setWatch] = useState(Data[3]);
     
     return (
         <div className="watchContainer">
@@ -50,4 +42,4 @@ const Shop01 = () => {
     )
 };
 
-export default Shop01;
+export default Shop04;
