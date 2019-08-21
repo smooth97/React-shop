@@ -9,7 +9,7 @@ const Watch = ({image, series, connectivity, features, price, size, src}) => {
                 <h2>Series {series}</h2>
                 <h3>{connectivity}</h3>
                 <p>{features}</p>
-                <span>{price}</span>
+                <span>${price}</span>
                 <h4>{size}</h4>
             </div>
         </div>
