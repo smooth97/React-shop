@@ -16,7 +16,7 @@ const Section = () => {
         <main>
         <section>
         {watches.map(watch => (
-                    <Link to={watch.src} style={{textDecoration: 'none'}}>
+                    <Link to={watch.src} style={{textDecoration: 'none'}} key={watch.id}>
                     <Watch
                         image={watch.image}
                         series={watch.series}

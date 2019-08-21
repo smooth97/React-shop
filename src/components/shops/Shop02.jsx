@@ -3,11 +3,11 @@ import Data from '../../Data';
 import '../../styles/shops.css';
 
 
-const Shop01 = () => {
+const Shop02 = () => {
 
     const title = 'Apple Watch Hermès';
 
-    const [watch, setWatch] = useState(Data[0]);
+    const [watch, setWatch] = useState(Data[1]);
     
     return (
         <div className="watchContainer">
@@ -30,7 +30,7 @@ const Shop01 = () => {
                         <h3>Connectivity</h3>
                         <h3>{watch.connectivity}</h3>
                         <h2>{watch.price}</h2>
-                        <button>Add to Cart</button>
+                        <button>Add to Cart</button>  
                     </div>
                 </div>
             </section>
@@ -38,4 +38,4 @@ const Shop01 = () => {
     )
 };
 
-export default Shop01;
+export default Shop02;

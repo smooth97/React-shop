@@ -1,6 +1,5 @@
 .cartContainer {
   text-align: center;
-  position: relative;
 }
 
 .cartContainer h1 {
@@ -8,17 +7,20 @@
   color: grey;
 }
 
-.cartContainer img {
+.cartContainer .imgBox {
   position: relative;
+  width: 981px;
+  margin: auto;
 }
 
-.cartContainer div {
+.cartContainer .imgBox div {
+  width: 400px;
   position: absolute;
-  top: 45%;
-  left: 13%;
+  top: 20%;
+  left: 5%;
 }
 
-.cartContainer div h2 {
+.cartContainer .imgBox div h2 {
   font-size: 40pt;
   color: #b6b6b6;
   -webkit-margin-before: 0.83em;
@@ -27,7 +29,7 @@
           margin-block-end: 0.3em;
 }
 
-.cartContainer div p {
+.cartContainer .imgBox div p {
   color: #a7a7a7;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -36,7 +38,7 @@
   font-weight: 200;
 }
 
-.cartContainer div button {
+.cartContainer .imgBox div button {
   background: #f37c49;
   border: none;
   color: white;
