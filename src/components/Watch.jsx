@@ -5,9 +5,9 @@ import React from 'react';
 const Watch = (props) => {
 
 
-    return(
+    return (
         <div>
-            <img src={props.image} alt=""/>
+            <img src={props.image} alt="" />
             <div className="contents">
                 <h2>Series {props.series}</h2>
                 <h3>{props.connectivity}</h3>

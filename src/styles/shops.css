@@ -132,4 +132,22 @@
   background: #f37c49;
   font-size: 16pt;
 }
+
+.watchContainer section .order .connectivity .icon {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15pt;
+  font-weight: 500;
+  color: #f37c49;
+}
+
+.watchContainer section .order .connectivity .icon .cartSvg {
+  width: 25px;
+  margin-right: 50px;
+}
 /*# sourceMappingURL=shops.css.map */

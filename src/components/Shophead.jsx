@@ -7,15 +7,15 @@ const Shophead = () => {
 
     return (
         <>
-             <header>
+            <header>
                 <div className="left"></div>
-                    <div className="text">
-                        <img className="logo" src={logo} alt="logo"/>
-                        <h1> 
-                            A shared vision, seen<br/>in a whole new light.
+                <div className="text">
+                    <img className="logo" src={logo} alt="logo" />
+                    <h1>
+                        A shared vision, seen<br />in a whole new light.
                         </h1>
-                    </div>
-                    <img src={headerImg} alt="header" />
+                </div>
+                <img src={headerImg} alt="header" />
                 <div className="right"></div>
             </header>
         </>

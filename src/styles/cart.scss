@@ -6,21 +6,158 @@ $dark-blue: rgb(33,43,55);
 $light-yellow: rgb(247,241,229);
 
 .cartContainer{
-    padding: 20px;
     width: 100vw;
-    height: 100vh;
-
-    .product {
-        width: 100%;
-        height: 70%;
-        background: $orange;
-        align-content: center;
-        position: relative;
+    height: 80vh;
+    background: $grey;
+    margin-top: 20px;
+    position: relative;
+    display: flex;      
+    
+    a {
+        text-decoration: none;
+        list-style: none;
     }
 
-    .total {
-        width: 100%;
-        height: 30%;
+    .left {
+        width: 55%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        padding: 5%;
+
+        header {
+            width: 100%;
+            height: 60px;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $grey;
+            border-bottom: 1px solid #b9b9b9;
+
+            h2 {
+                margin-left: 50px;
+            }
+
+            h3 {
+                font-size: 12pt;
+                font-weight: 600;
+                color: #747474;
+                margin-right: 10%;
+            }
+        }
+    
+        .product {
+            width: 100%;
+            height: 80%;
+            align-content: center;
+            position: relative;
+            margin-top: 20px;
+            overflow: auto;
+
+            .store {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 8pt;
+                color: grey;
+            }            
+        }
+        footer {
+            width: 100%;
+            height: 70px;
+            line-height: 70px;
+
+            span {
+                display: block;
+                margin-left: 30px;
+                font-size: 10pt;
+                font-weight: 600;
+                color: $grey;
+                transition: all 0.3s ease-in-out;
+            }
+
+            span:hover {
+                color: $orange;
+            }
+        }
+    }
+    
+    .right {
+        width: 25%;
+        height: 100%;
+        background: $light-grey;
+        position: absolute;
+        right: 0;
+        color: $grey;
+        align-items: center;
+        padding: 5%;
+
+        header {
+            width: 100%;
+            height: 60px;
+            background: $light-grey;
+            border-bottom: 1px solid #b9b9b9;
+            line-height: 60px;
+        }
+
+        .menu {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-bottom: 1px solid #b9b9b9;
+            
+            h2 {
+                font-size: 12pt;
+                margin-top: 20px;
+                font-weight: 500;
+                color: rgb(88, 88, 88);
+            }
+            input {
+                width: 80%;
+                height: 30px;
+                margin-bottom: 20px;
+            }
+            
+            div {
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 12pt;
+                    margin-top: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .total {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button {
+                margin-top: 20px;
+                width: 100%;
+                height: 40px;
+                background: $orange;
+                border: none;
+                font-size: 16pt;
+                color: white;
+                cursor: pointer;
+            }
+        }
     }
 }
 

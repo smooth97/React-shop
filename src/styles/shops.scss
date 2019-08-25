@@ -119,7 +119,23 @@ $orange : rgb(243, 124, 73);
                     background: $orange;
                     font-size: 16pt;
                 }
+
+                .icon {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15pt;
+                    font-weight: 500;
+                    color: $orange;
+
+                    .cartSvg {
+                        width: 25px;
+                        margin-right: 50px;
+                    }
+                }
             }
+
+            
         }
     }
 
