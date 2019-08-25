@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Data from '../../Data';
 import '../../styles/shops.css';
+import { CartContext } from '../../CartContext';
+import cartSgv from './../../images/icons_md-cart.svg';
 
 
-const Shop01 = () => {
+
+const Shop01 = (props) => {
 
     const title = 'Apple Watch Hermès';
 
     const [watch, setWatch] = useState(Data[0]);
-    
+    const [cart, setCart] = useContext(CartContext);
+
+    const addToCart = () => {
+        const item = {features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id};
+        setCart(current => [...current, item]);
+    }
+
     return (
         <div className="watchContainer">
             <header>
@@ -19,18 +28,24 @@ const Shop01 = () => {
                     <img src={watch.image} alt=""/>
                 </div>
                 <div className="order">
-                    <div className="spec">
-                        <h1>{title}</h1>
-                        <h2>{watch.features}</h2>
-                        <h3>Case Size</h3>
-                        <h3>{watch.size}</h3>
-                        <h4>Band fits 130–155mm wrists.</h4>
+                <div className="spec">
+                        <div className="title">
+                            <h1>{title}</h1>
+                            <h2>{watch.features}</h2>
+                        </div>
+                        <div className="case">
+                            <h2>Case Size</h2>
+                            <h3>{watch.size}</h3>
+                            <p>Band fits 130–155mm wrists.</p>
+                        </div>
                     </div>
                     <div className="connectivity">
                         <h3>Connectivity</h3>
                         <h3>{watch.connectivity}</h3>
-                        <h2>{watch.price}</h2>
-                        <button>Add to Cart</button>
+                        <h2>${watch.price}</h2>
+                        <button onClick={addToCart}>Add to Cart</button>
+                        <br/>
+                        <span><img src="cartSgv"/>{cart.length === 0 ? "0" : cart.length}</span>
                     </div>
                 </div>
             </section>

@@ -4,15 +4,15 @@ import '../../styles/shops.css';
 import { CartContext } from '../../CartContext';
 
 
-const Shop02 = (props) => {
+const Shop09 = () => {
 
     const title = 'Apple Watch Hermès';
 
-    const [watch, setWatch] = useState(Data[1]);
+    const [watch, setWatch] = useState(Data[8]);
     const [cart, setCart] = useContext(CartContext);
 
     const addToCart = () => {
-        const item = {features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id};
+        const item = {features: watch.features, price: watch.price, quantity: watch.quantity};
         setCart(current => [...current, item]);
     }
     
@@ -34,14 +34,14 @@ const Shop02 = (props) => {
                         <div className="case">
                             <h2>Case Size</h2>
                             <h3>{watch.size}</h3>
-                            <p>Band fits 160–195mm wrists.</p>
+                            <p>Band fits 165–200mm wrists.</p>
                         </div>
                     </div>
                     <div className="connectivity">
                         <h3>Connectivity</h3>
                         <h3>{watch.connectivity}</h3>
                         <h2>${watch.price}</h2>
-                        <button onClick={addToCart}>Add to Cart</button>  
+                        <button onClick={addToCart}>Add to Cart</button>
                     </div>
                 </div>
             </section>
@@ -49,4 +49,4 @@ const Shop02 = (props) => {
     )
 };
 
-export default Shop02;
+export default Shop09;

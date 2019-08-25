@@ -1,0 +1,57 @@
+$grey : #454545;
+$orange : rgb(243, 124, 73);
+$brown: rgb(181,133,90);
+$dark-blue: rgb(33,43,55);   
+$light-yellow: rgb(247,241,229);   
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.productContainer {
+    margin: auto;
+    width: 800px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+
+    img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        top: 0;
+        left: 0;
+        width: 700px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            font-size: 10pt;
+            color: $grey;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 10pt;
+            color: $grey;
+        }
+
+        input {
+            width: 20px;
+        }
+        
+        button {
+            width: 20px;
+            height: 20px;
+            background: $orange;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

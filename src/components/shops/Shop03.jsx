@@ -3,12 +3,11 @@ import Data from '../../Data';
 import '../../styles/shops.css';
 import { CartContext } from '../../CartContext';
 
-
-const Shop02 = (props) => {
+const Shop03 = () => {
 
     const title = 'Apple Watch Hermès';
 
-    const [watch, setWatch] = useState(Data[1]);
+    const [watch, setWatch] = useState(Data[2]);
     const [cart, setCart] = useContext(CartContext);
 
     const addToCart = () => {
@@ -26,7 +25,7 @@ const Shop02 = (props) => {
                     <img src={watch.image} alt=""/>
                 </div>
                 <div className="order">
-                    <div className="spec">
+                <div className="spec">
                         <div className="title">
                             <h1>{title}</h1>
                             <h2>{watch.features}</h2>
@@ -34,14 +33,14 @@ const Shop02 = (props) => {
                         <div className="case">
                             <h2>Case Size</h2>
                             <h3>{watch.size}</h3>
-                            <p>Band fits 160–195mm wrists.</p>
+                            <p>Band fits 130–155mm wrists.</p>
                         </div>
                     </div>
                     <div className="connectivity">
                         <h3>Connectivity</h3>
                         <h3>{watch.connectivity}</h3>
                         <h2>${watch.price}</h2>
-                        <button onClick={addToCart}>Add to Cart</button>  
+                        <button onClick={addToCart}>Add to Cart</button>
                     </div>
                 </div>
             </section>
@@ -49,4 +48,4 @@ const Shop02 = (props) => {
     )
 };
 
-export default Shop02;
+export default Shop03;

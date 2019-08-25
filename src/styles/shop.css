@@ -146,11 +146,15 @@ main section div .contents h4 {
 }
 
 footer {
-  width: 1200px;
+  width: 95vw;
   height: 250px;
   margin: auto;
   border-top: 1px solid #a7a7a7;
   color: #454545;
   font-size: 8pt;
+}
+
+footer p:first-child {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=shop.css.map */
