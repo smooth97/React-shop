@@ -34,9 +34,14 @@
 }
 
 .productContainer .content p {
+  width: 150px;
+  display: block;
   font-size: 10pt;
   color: #454545;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .productContainer .content h2 {

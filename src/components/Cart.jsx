@@ -8,10 +8,11 @@ import Products from './Products';
 
 const Cart = () => {
 
+    const [watch, setWatch] = useState(Data);
     const [items, setItems] = useState(Data);
-    //console.log(items);
 
     const [cart, setCart] = useContext(CartContext);
+
     const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
 
     // Cart Style
@@ -21,10 +22,45 @@ const Cart = () => {
     const block = {
         display: "block"
     };
+    console.log(items[0])
+    const handleAddFunc = (product) => {
+        const existionProduct = cart.filter(p => p.id === product.id);
+        if (existionProduct.length > 1) {
+            //setCart(cart.filter(p => p.id !== product.id));
+            console.log("handle");
+            //product.quantity += 1;
+
+            // const update = {
+            //     ...existionProduct[0],
+            //     quantity: existionProduct[0].quantity + product.quantity
+            // }
+        }
+    }
+    //state.filter(todo => todo.id !== action.id);
+
+    const onRemove = (product) => {
+        setCart(cart.filter(p => p.id !== product.id));
+        console.log("dele");
+    }
+    
+     const addToCart = (product) => {
+         //const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };
+         setCart(current => [...current]);
+     }
+
+     
+
+    // const decrease = () => {
+    //     const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };   
+    //     console.log(item)
+    // } 
+
+    // const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };
+    // cart.filter(i => i.id !== item.id);
+    
 
     return (
         <div>
-
             <div className="cartContainer" style={
                 cart.length === 0 ? none : block}>
 
@@ -46,6 +82,8 @@ const Cart = () => {
                                 quantity={i.quantity}
                                 key={i.id}
                                 src={i.src}
+                                onRemove={() => (onRemove(i))}
+                                addFunc={handleAddFunc(i)}
                             />
                         ))}
                     </div>
