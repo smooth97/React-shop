@@ -12,8 +12,10 @@ const Cart = () => {
     const [items, setItems] = useState(Data);
 
     const [cart, setCart] = useContext(CartContext);
-
-    const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
+    //curr.price, 0
+    const totalPrice = cart.reduce((acc, curr) => {
+        return acc + curr.price * curr.quantity;
+    }, 0);
 
     // Cart Style
     const none = {
@@ -22,49 +24,44 @@ const Cart = () => {
     const block = {
         display: "block"
     };
-    console.log(items[0])
+
+    //기존에 있는 Product 필터 후 qauntity + 1 함수
     const handleAddFunc = (product) => {
         const existionProduct = cart.filter(p => p.id === product.id);
+        
         if (existionProduct.length > 1) {
-            //setCart(cart.filter(p => p.id !== product.id));
-            console.log("handle");
-            //product.quantity += 1;
-
-            // const update = {
-            //     ...existionProduct[0],
-            //     quantity: existionProduct[0].quantity + product.quantity
-            // }
+            //이미 존재하는 Product 삭제
+            setCart(cart.filter(p => p.id !== product.id));
+            
+            //quantity += 1 한 새로운 product 추가
+            const item = { features: product.features, price: product.price, quantity: product.quantity, image: product.image, id: product.id };
+            setCart(current => [...current, item]);
+            return item.quantity++;
+            
         }
     }
-    //state.filter(todo => todo.id !== action.id);
 
+    //해당하는 Product 삭제
     const onRemove = (product) => {
         setCart(cart.filter(p => p.id !== product.id));
         console.log("dele");
     }
     
-     const addToCart = (product) => {
-         //const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };
-         setCart(current => [...current]);
-     }
+    const incre = (product) => {
+        console.log("incre");
+    }
 
-     
-
-    // const decrease = () => {
-    //     const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };   
-    //     console.log(item)
-    // } 
-
-    // const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };
-    // cart.filter(i => i.id !== item.id);
-    
+     const decrease = (product) => {
+         const item = { features: watch.features, price: watch.price, quantity: watch.quantity, image: watch.image, id: watch.id };   
+         console.log(item)
+    }    
 
     return (
         <div>
             <div className="cartContainer" style={
                 cart.length === 0 ? none : block}>
 
-                <div className="left">
+                <div className="left">    
                     <header>
                         <h2>Shoping Cart</h2>
                     </header>
@@ -82,8 +79,10 @@ const Cart = () => {
                                 quantity={i.quantity}
                                 key={i.id}
                                 src={i.src}
-                                onRemove={() => (onRemove(i))}
-                                addFunc={handleAddFunc(i)}
+                                increase={incre}
+                                decrease={decrease}
+                                onRemove={onRemove(i)}
+                                addFunc={() => handleAddFunc(i)}
                             />
                         ))}
                     </div>

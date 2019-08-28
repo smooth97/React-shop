@@ -5,7 +5,7 @@ import Data from '../Data';
 import { CartContext } from '../CartContext';
 
 
-const Products = ({ image, features, price, src, quantity, id, decrease, onRemove, addFunc}) => {
+const Products = ({ image, features, price, src, quantity, id, decrease, increase, onRemove, addFunc}) => {
 
     const [watch, setWatch] = useState(Data);
     const [items, setItems] = useState(Data);
@@ -15,10 +15,6 @@ const Products = ({ image, features, price, src, quantity, id, decrease, onRemov
     //     const item = { quantity: quantity + 1 };
     //     setCart(current => [...current, item]);
     // }
-    const increase = () => {
-        setCart(cart[0].quantity += 1)
-        console.log(cart[0].quantity);
-     } 
 
     return (
         <div className="productContainer">
