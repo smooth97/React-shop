@@ -27,8 +27,8 @@ const Products = ({ image, features, price, src, quantity, id, decrease, increas
                     <button onClick={decrease}>-</button>
                 </div>
                 <h2>${price}</h2>
+                <button className="remove" onClick={onRemove}>x</button>
             </div>
-            <button onClick={onRemove}>x</button>
         </div>
     );
 };

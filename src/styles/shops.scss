@@ -140,3 +140,16 @@ $orange : rgb(243, 124, 73);
     }
 
 }
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: white;
+
+  button {
+      background: $dark-blue;
+  }
+}

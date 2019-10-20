@@ -11,6 +11,7 @@ const Section = () => {
     // useState 사용해서 시계 Data 가져와서 Watch 컴포넌트에 적용
 
     const [watches, setWatches] = useState(Data);
+    console.log(Data);
 
     return (
         <main>

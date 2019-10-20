@@ -34,9 +34,9 @@ const Cart = () => {
             setCart(cart.filter(p => p.id !== product.id));
             
             //quantity += 1 한 새로운 product 추가
-            const item = { features: product.features, price: product.price, quantity: product.quantity, image: product.image, id: product.id };
-            setCart(current => [...current, item]);
-            return item.quantity++;
+            // const item = { features: product.features, price: product.price, quantity: product.quantity, image: product.image, id: product.id };
+            // setCart(current => [...current, item]);
+            // return item.quantity++;
             
         }
     }
@@ -81,7 +81,7 @@ const Cart = () => {
                                 src={i.src}
                                 increase={incre}
                                 decrease={decrease}
-                                onRemove={onRemove(i)}
+                                onRemove={() => onRemove(i)}
                                 addFunc={() => handleAddFunc(i)}
                             />
                         ))}

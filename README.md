@@ -1,38 +1,37 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## React shopping website
+![screenshot](./src/images/1.JPG)
+
+# Apple Watch
 
 리엑트 공부용으로 만든 애플워치 쇼핑웹사이트
 
-## Study
+## Learn
 
-React, router, Redux, Prettier,
+- React
+- Redux
+- router
+- Prettier
 
-### `npm test`
+## Tools
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Axios
+- React & Redux
+- Sass (grid & flexbox)
+- Media queries
 
-### `npm run build`
+## Skills
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- router 연결
+- 원하는 상품 상세 페이지 확인
+- cart 상품 담기 기능
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![screenshot](./src/images/2.JPG)
 
-### `npm run eject`
+![screenshot](./src/images/3.JPG)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![screenshot](./src/images/4.JPG)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![screenshot](./src/images/5.JPG)

@@ -35,15 +35,23 @@ $light-yellow: rgb(247,241,229);
             display: block;
             font-size: 10pt;
             color: $grey;
-            font-weight: 400;
+            font-weight: 500;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
+        span {
+            font-size: 12pt;
+            color: $grey;
+            font-weight: 600;
+            color: $orange;
+        }
+
         h2 {
             font-size: 10pt;
             color: $grey;
+            font-weight: 500;
         }
 
         input {
@@ -51,11 +59,24 @@ $light-yellow: rgb(247,241,229);
         }
         
         button {
+            display: none;
             width: 20px;
             height: 20px;
             background: $orange;
             padding: 0;
             margin: 0;
+        }
+        .remove {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            display: block;
+            background: gray;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 8pt;
+            font-weight: 600;
         }
     }
 }
