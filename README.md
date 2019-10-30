@@ -14,7 +14,6 @@
 
 ## Tools
 
-- Axios
 - React & Redux
 - Sass (grid & flexbox)
 - Media queries
